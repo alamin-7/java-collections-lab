@@ -52,7 +52,7 @@ public class Main {
 
 
 
-        List<String> list = Arrays.asList("eat", "ate", "bcd", "cbd", "ccb");
+/*        List<String> list = Arrays.asList("eat", "ate", "bcd", "cbd", "ccb");
         List<List<String>> anagrams = new ArrayList<>();
 
         boolean[] visited = new boolean[list.size()];
@@ -95,7 +95,7 @@ public class Main {
                     } else if (tempMap.get(ch) == 1) {
                         tempMap.remove(ch);
                     } else {
-                        tempMap.put(ch, tempMap.get(ch) -1);
+                        tempMap.put(ch, tempMap.get(ch) - 1);
                     }
                 }
 
@@ -120,5 +120,36 @@ public class Main {
             map.put(ch, map.getOrDefault(ch, 0) + 1);
         }
         return map;
+    }*/
+
+        Employee employee1 = new Employee(1, "Alamin");
+        Employee employee2 = new Employee(1, "Alamin");
+
+        HashMap<Employee, String> hashMap = new HashMap<>();
+
+        hashMap.put(employee1, "one");
+        hashMap.put(employee2, "two");
+
+        System.out.println(hashMap.get(employee2)); // two
+
+/*        hashMap.put(1, employee1);
+        hashMap.put(2, employee2);*/
+
+        System.out.println(hashMap.size()); // 1 if equals and hashCode methods Override
+
+    /*    Hashtable<Integer, String > hashtable = new Hashtable<>();
+
+        List<Integer> list = new ArrayList<>();
+
+        System.out.println("array list initial size: "+list);
+
+       hashtable.put(1, "hashtable");
+
+        System.out.println("hash map initial size: "+hashMap.size());
+
+        hashMap.put(1, "one");
+        hashMap.put(2, "two");
+
+        System.out.println(hashMap.size());*/
     }
 }
